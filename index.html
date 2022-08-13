@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    Fst Num <input type="number" value="" id="num1" />
+    <br />
+    Sec Num <input type="number" value="" id="num2" />
+    <br />
+
+    <div id="div1">Answer =</div>
+    <br />
+    <button onclick="funcPlus">+</button>
+    <button onclick="funcMinus">-</button>
+    <button onclick="funcMultiple">*</button>
+    <button onclick="funcDivide">/</button>
+
+    <!-- <button onclick="func1()">calc</button> -->
+
+    <script>
+      const func1 = () => {
+        const element = document.getElementById("num1");
+        const value = element.value;
+        const type = element.type;
+        const id = element.id;
+        // const divElement = getElementById("div1");
+        // divElement.innerHTML = `Answer = ${value}`;
+
+        // alert(`${value}.${id}.${type}`);
+      };
+      const func2 = () => {
+        const element = document.getElementById("num2");
+        const value = element.value;
+        const type = element.type;
+        const id = element.id;
+        // const divElement = getElementById("div1");
+        // divElement.innerHTML = `Answer = ${value}`;
+
+        // alert(`${value}.${id}.${type}`);
+      };
+
+      const funcPlus = (a, b) => {
+        const Plus = a + b;
+        return Plus;
+      };
+
+      const funcMinus = (a, b) => {
+        const Minus = a - b;
+        return Minus;
+      };
+      const funcMultiple = (a, b) => {
+        const Multiple = a * b;
+        return Multiple;
+      };
+      const funcDivide = (a, b) => {
+        const Divide = a / b;
+        return Divide;
+      };
+    </script>
+  </body>
+</html>
